@@ -55,8 +55,6 @@
   <block id="63b3b8b876e68763a44f8227f91a9bab" category="list-text">记录 IP 地址或 URL ，分配的用户名（ umadmin ）和当前密码。</block>
   <block id="2ad8650bc36e875f76af07af6156dc81" category="list-text">如果在安装 Unified Manager 之前使用自定义主目录创建了一个 umadmin 用户帐户，则必须指定 umadmin 用户登录 Shell ：</block>
   <block id="de655d5c807407174b4c747a67443f65" category="paragraph">`usermod -s /bin/maintenance-user-shell.sh umadmin`</block>
-  <block id="09e58bfdfb5bb7adf152df5b1b5ed29c" category="inline-link-macro">《 Active IQ Unified Manager 系统配置指南》</block>
-  <block id="24dfd2ec1e382cb2b2bb4f021e4982ba" category="paragraph">访问 Web UI 以更改 umadmin 用户的默认密码，并执行 Unified Manager 的初始设置，如中所述 <block ref="f58716a8c39c318b5ee09a724a759e81" category="inline-link-macro-rx"></block>。</block>
   <block id="440eb40eb8cf6c5d06e6de7d9d2db8c0" category="summary">如果您计划在 NAS 或 SAN 设备上挂载 /opt/netapp 或 /opt/netapp/data ，并且已启用 SELinux ，则需要了解以下注意事项。</block>
   <block id="8c60b39d035602485d7a07ef3aa2f5f0" category="doc">NFS 和 CIFS 共享上的 SELinux 要求</block>
   <block id="a8d633f5ac5e3ef0835f41c9ff4cf88a" category="paragraph">如果您计划在 NAS 或 SAN 设备上挂载 ` 或 opt/netapp` 或 ` /opt/netapp/data` ，并且已启用 SELinux ，则需要注意一些事项。</block>
@@ -206,8 +204,6 @@
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="paragraph">REST</block>
   <block id="7dc8b441cf4e6fe9bc806679c4579e68" category="paragraph">9443</block>
   <block id="77294b4d67d929acf56022eb43f81988" category="paragraph">用于从经过身份验证的 ONTAP 系统访问基于 API 的实时 REST EMS 事件。</block>
-  <block id="aa3e397e51f9b1b6d6c235fdae39144f" category="paragraph">用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 Active IQ Unified Manager 系统配置指南。</block>
-  <block id="f58716a8c39c318b5ee09a724a759e81" category="paragraph"><block ref="f58716a8c39c318b5ee09a724a759e81" category="inline-link-macro-rx"></block></block>
   <block id="5a6374d3b555b76afa32840797491a50" category="section-title">与 Unified Manager 服务器的连接</block>
   <block id="a61ed6b83536814a5598fdc74a793e54" category="paragraph">您应将防火墙配置为打开端口，以便在 Unified Manager 服务器与受管存储系统，服务器和其他组件之间进行通信。如果端口未打开，则通信将失败。</block>
   <block id="e2dc6782e0d053b02e4502c879e72c78" category="paragraph">根据您的环境，您可以选择修改 Unified Manager 服务器用来连接到特定目标的端口和协议。</block>
@@ -474,7 +470,6 @@
   <block id="ced6d1a53e1edd338f03b11a9bc5603d" category="paragraph">对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含 AppStream 存储库提供的 JAVA-11-OpenJDK ， p7zip 和其他软件包，则必须禁用 AppStream 存储库并安装 MySQL 社区服务器。运行以下命令：</block>
   <block id="8c9d08852e8e1febedc693013a4f0f93" category="summary">安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。</block>
   <block id="bed7b91a2df8076097fedfb7b87f92e7" category="doc">安装顺序概述</block>
-  <block id="dacfb51b4a094d652e66024bf2159200" category="paragraph">本安装指南的各章介绍了以下工作流中显示的每个项目。</block>
   <block id="322f88fdb47136f0505af3e29d2c5649" category="image-alt">总体安装流程</block>
   <block id="688dd421579f9ca49f8068cf7c5fc387" category="summary">更改配置后，您可能需要重新启动 Unified Manager 。</block>
   <block id="963d08ca263f6cd538d14c2e7f2ec229" category="doc">正在重新启动 Unified Manager</block>
@@ -641,7 +636,6 @@
   <block id="e63adb915964a7470fb81d10efd31708" category="list-text">将生成的 `JDK` 目录（例如， `JDK-11.0.12` ）中的目录和文件复制到 Java 的安装位置。示例： `C ： \Program Files\NetApp\JDK\`</block>
   <block id="4ce60e4b06ffbfa5ed76fd9dbdcbe958" category="list-text">使用 Windows 服务控制台启动 Unified Manager 服务：</block>
   <block id="e3ba6c64064adba107328f731ffc579e" category="summary">要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。</block>
-  <block id="234ad54522d9925af496168ab12f5c8d" category="paragraph">您可以在以下 Windows 版本上安装 Unified Manager ： * Microsoft Windows Server 2016 Standard 和 Datacenter Edition * Microsoft Windows Server 2019 Standard 和 Datacenter Edition</block>
   <block id="84d4d095f4b0442f31e07426efa9b0a7" category="paragraph">Unified Manager 在 64 位 Windows 操作系统上支持以下语言：</block>
   <block id="4f4383ae303a1aa1063bb36803e75868" category="paragraph">有关受支持的 Windows 版本的最新完整列表，请参见互操作性表。</block>
   <block id="2dedeeb59a743d2abc64040dd65c2e1a" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。</block>
@@ -664,11 +658,7 @@
   <block id="ce103923838f9bc916d8e7cb36cf9794" category="list-text">您应禁用 Microsoft IIS 全球 Web 发布服务，并确保端口 80 和 443 可用。</block>
   <block id="a52e8dd64ba5c532ee8a9127c4a53694" category="list-text">您应确保在安装期间已禁用 "`Windows Installer RDS 兼容性` " 的远程桌面会话主机设置。</block>
   <block id="2e9f7284307b6c63613fea773cab2249" category="list-text">UDP 端口 514 应为空闲端口，不应由任何其他服务使用。</block>
-  <block id="a8ffce21d748532a69e40672feeeaef6" category="paragraph">Unified Manager 安装程序会在 Windows Defender 中配置以下排除项：</block>
-  <block id="443953c08ed4d54d7066b9aa4207cbbe" category="list-text">Unified Manager 数据目录</block>
-  <block id="92989804e9614b922b48cda022c3a4c9" category="list-text">Unified Manager 安装目录</block>
   <block id="560a4b149b9bbe1df98009b8d0ebcf46" category="list-text">MySQL 数据目录</block>
-  <block id="f2f43eb69cd848b60346743d98242154" category="paragraph">如果您的服务器安装了其他防病毒扫描程序，则应手动配置这些排除项。</block>
   <block id="635dbe5a53fa671dc53b3dfff7d6f296" category="summary">您可以安装 Unified Manager 来监控数据存储容量，可用性，性能和保护问题并对其进行故障排除。</block>
   <block id="736f549b511feffbd0e554a9a748a1db" category="list-text">您计划安装 Unified Manager 的系统应满足系统和软件要求。</block>
   <block id="ac785513c978c7d6724dd2415fc27d74" category="list-text">您应具有受支持的 Web 浏览器。</block>
@@ -691,7 +681,6 @@
   <block id="4f72d182cd74cecc577c31f8379223b4" category="paragraph">这是安装 OpenJDK 的目录。示例： `C ： \Program Files\NetApp\JDK\`</block>
   <block id="bfb2446e315edcbba47f0c61f07da5e5" category="list-text">Unified Manager 应用程序数据目录（ appDataDir ）</block>
   <block id="e245a912d513c7363e5be4985ed7b772" category="paragraph">此目录用于存储应用程序生成的所有数据。其中包括日志，支持包，备份以及所有其他附加数据。示例： `C ： \ProgramData\NetApp\OnCommandAppData\`</block>
-  <block id="83e65a3fd23ed76726a6b95118397fad" category="paragraph">您可以访问 Web UI 以执行 Unified Manager 的初始设置，如中所述 <block ref="f58716a8c39c318b5ee09a724a759e81" category="inline-link-macro-rx"></block>。</block>
   <block id="983eb41117bb464388685a705b914606" category="summary">您可以使用程序和功能向导卸载 Unified Manager ，也可以从命令行界面执行无人参与的卸载。</block>
   <block id="a17f437aedf2eddaf8ba841b0c1aeb45" category="doc">卸载 Unified Manager</block>
   <block id="9722ab728446f937c918c0e5e4e40c5e" category="list-text">卸载软件之前，必须从 Unified Manager 服务器中删除所有集群（数据源）。</block>
@@ -816,7 +805,6 @@
   <block id="26f440e8c4cd1d3146cbae1a4c93048d" category="paragraph">维护用户名应以 a-z 中的字母开头，后跟 - ， a-z 或 0-9 的任意组合。</block>
   <block id="0fe01979c09e5c4c4a13629e8a2dc63f" category="list-text">在提示符处输入密码，然后单击 * 输入 * 。</block>
   <block id="827e9bc6912741afa9fd15061acbdf3a" category="paragraph">VM 控制台将显示 Unified Manager Web UI 的 URL 。</block>
-  <block id="b251c0d5b9ac9a245c3e5680b898541b" category="paragraph">您可以访问 Web UI 以执行 Unified Manager 的初始设置，如 _Unified Active IQ Unified Manager 系统配置指南中所述。</block>
   <block id="c200239369f7ea49229003f057ad8769" category="summary">从 NetApp 支持站点下载 Unified Manager 安装文件，将 Unified Manager 部署为虚拟设备。</block>
   <block id="c1da04ff6acab5d7e257dd6ef058663f" category="doc">下载 Unified Manager 安装文件</block>
   <block id="89ceb9ec1fb3db99ae27c6381019e506" category="paragraph">您应具有 NetApp 支持站点的登录凭据。</block>
@@ -1225,8 +1213,6 @@
   <block id="417c8bfee406c52e82d5627974ff264d" category="paragraph">如果您需要指定一个代理来提供 Internet 访问以发送 AutoSupport 内容，或者要禁用 AutoSupport ，请使用 Web UI 中的 * 常规 * &gt; * AutoSupport * 选项。</block>
   <block id="a9d62eb63a0e399aec66c4be03008f7d" category="list-text">在 Red Hat 和 CentOS 系统上，您可以将 umadmin 用户密码从默认的 "`admin` " 字符串更改为个性化字符串。</block>
   <block id="d3670f59405d014a440cff8e13353ec2" category="list-text">在设置 API 网关页面中，选择是否要使用 API 网关功能，以便 Unified Manager 能够管理计划使用 ONTAP REST API 监控的 ONTAP 集群。然后单击 * 继续 * 。</block>
-  <block id="e892333322154430a4cc6c5462eda7d9" category="inline-link-macro">《 Active IQ Unified Manager API 开发人员指南》</block>
-  <block id="ca510dfe44ee0ca981ac61fb5c368ad0" category="paragraph">您可以稍后在 Web UI 中通过 * 常规 * &gt; * 功能设置 * &gt; * API 网关 * 启用或禁用此设置。有关 API 的详细信息，请参见 <block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block>。</block>
   <block id="bb6beb9bc67c9e7bbc359a295ac7b879" category="list-text">添加希望 Unified Manager 管理的集群，然后单击 * 下一步 * 。对于您计划管理的每个集群，您必须具有主机名或集群管理 IP 地址（ IPv4 或 IPv6 ）以及用户名和密码凭据 - 用户必须具有 "`admin` " 角色。</block>
   <block id="bfb26aad10adbec1f5cd25ef16ca9bb0" category="paragraph">此步骤为可选步骤。稍后可以从 * 存储管理 * &gt; * 集群设置 * 在 Web UI 中添加集群。</block>
   <block id="8fe7045b0b6050a6dc3a12043504e646" category="list-text">在摘要页面中，验证所有设置是否正确，然后单击 * 完成 * 。</block>
@@ -1304,8 +1290,6 @@
   <block id="da95a52d9fa1a70d5fd98fb79e2cc806" category="list-text">* 信息板 * 上的工作负载性能面板</block>
   <block id="19a071e7be204597ac23f133f7dfcda9" category="paragraph">您可以使用这些屏幕创建性能服务级别和存储效率策略，以及配置存储工作负载。您还可以监控符合分配的性能服务级别的存储工作负载以及不符合的存储工作负载。您还可以通过工作负载性能和工作负载 IOPS 面板根据数据中心中配置的存储工作负载评估集群的总容量和性能，可用容量和性能以及已用容量和性能（ IOPS ）。</block>
   <block id="3b0d83928702ed580a046fd86c0abe40" category="paragraph">激活此功能后，您可以通过 * 菜单栏 * &gt; * 帮助按钮 * &gt; * API Documentation* &gt; * 存储提供程序 * 类别运行 Unified Manager REST API 来执行其中某些功能。或者，您也可以输入主机名或 IP 地址以及 URL 以访问 REST API 页面，格式为 +https://&lt;hostname&gt;/docs/api/+</block>
-  <block id="f59c397f9275c838856be7c9ccaafdec" category="paragraph">有关 API 的详细信息，请参见 _API Active IQ Unified Manager 开发人员指南 _ 。</block>
-  <block id="1c1fc9aeaa18b66544b062a77cce0a7c" category="paragraph"><block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block></block>
   <block id="be1498340b3f9fa855a418021e4f3784" category="summary">您可以配置警报，以便在生成特定事件时向您发出通知。您可以为单个资源，一组资源或特定严重性类型的事件配置警报。您可以指定通知频率，并将脚本与警报关联。</block>
   <block id="f1a7fa5a20f0a41855be8fed98c22304" category="doc">正在添加警报</block>
   <block id="080a3303ce24d4b2748eba343e78a0f5" category="list-text">您必须已配置通知设置，例如用户电子邮件地址， SMTP 服务器和 SNMP 陷阱主机，以使 Active IQ Unified Manager 服务器能够在生成事件时使用这些设置向用户发送通知。</block>
@@ -2199,9 +2183,6 @@
   <block id="5e03e5325b691b090a8be6bd2f762894" category="list-text">在卷 / 运行状况详细信息页面上，单击 * 配置 * 选项卡。</block>
   <block id="2e20a9eb2d4c78deb4dfaf308fa76630" category="paragraph">此时将显示分配给卷的 FabricPool 分层策略的名称。</block>
   <block id="403c9064edefe525f194ea2083115a2a" category="list-text">在 * 工作负载分析 * 页面中，您可以在 * 容量趋势 * 区域中选择 "`Cloud Tier View` " ，以查看上个月本地性能层和云层中使用的容量。</block>
-  <block id="787a5dee8395c9fdec4cfed3e51fdaf5" category="paragraph">有关 FabricPool 聚合的详细信息，请参见 _Data ONTAP 9 磁盘和聚合高级指南 _ 。</block>
-  <block id="604e3b21e20d2e3d15be71c643b54e69" category="inline-link">《 ONTAP 9 磁盘和聚合高级指南》</block>
-  <block id="7858451050766dac30885eb560158270" category="paragraph"><block ref="7858451050766dac30885eb560158270" category="inline-link-rx"></block></block>
   <block id="aab5eede3370dc677f5e40ee8f7d8364" category="summary">Unified Manager 信息板上的 " 安全 " 面板根据您的当前视图显示所有集群或单个集群的高级安全状态。</block>
   <block id="885f5600f37af7d8d04e7e7d203755b2" category="doc">查看集群安全状态概况</block>
   <block id="fdf9ab6d7d8f2cd2596a368e1dc822ce" category="paragraph">Unified Manager 信息板上的 " 安全性 " 面板根据当前视图显示所有集群或单个集群的高级别安全状态。</block>
@@ -2828,7 +2809,6 @@
   <block id="5c96c912b91fd84d629dedfd84808218" category="list-text">在虚拟设备上：</block>
   <block id="5b0abf47eb00598fbcf61f37f67408db" category="list-text">您必须知道要执行还原操作的 Unified Manager 维护用户的名称。</block>
   <block id="1970b59936db8fca55b99ad4014b0a2d" category="list-text">在 Linux 系统上：</block>
-  <block id="e88e0d195ba81b534045141d8e30a1d1" category="list-text">您必须已按照安装指南中的说明在 RHEL 或 CentOS 服务器上安装 Unified Manager 。</block>
   <block id="aa8a0d3c4fca5b51aba7b62e5d957e12" category="list-text">此服务器上的 Unified Manager 版本必须与使用备份文件的虚拟设备上的版本相同。</block>
   <block id="5c7df9ba2c5c2c63b0b7dae110f7a530" category="list-text">安装后，请勿启动 UI 或在 Linux 系统上配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。</block>
   <block id="7d15b42d5091522573483414e70f81ee" category="list-text">您必须具有 Linux 主机的 root 用户凭据。</block>
@@ -2940,17 +2920,12 @@
   <block id="bfef54bf5e739d61927a0c4b59a3e344" category="list-text">诊断和管理可用性问题</block>
   <block id="223349aab4cf55a8a8155654d93ffffc" category="paragraph">如果硬件故障或存储资源配置问题发生原因在信息板页面中显示数据可用性事件，存储管理员可以通过嵌入的链接查看有关受影响存储资源的连接信息，查看故障排除建议以及将问题描述解决方案分配给其他管理员。</block>
   <block id="88e01cbe98781362b3721e3f315cbe5f" category="list-text">配置和监控性能意外事件</block>
-  <block id="e5397a259f5c5b5282ab6e67048a8c06" category="inline-link-macro">《 Active IQ Unified Manager 集群性能管理工作流指南》</block>
-  <block id="812a052c5bda0e828475b86f21d19325" category="paragraph">管理员可以监控和管理所监控存储系统资源的性能。请参见 <block ref="462a173a2ae729165d70593def277285" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="0139a98f6e0579c352b31c7b55dab82a" category="list-text">诊断和管理卷容量问题</block>
   <block id="922341f19068faa5b454e09095be1e91" category="paragraph">如果 " 信息板 " 页面中显示卷存储容量问题，则存储管理员可以通过嵌入的链接查看与受影响卷的存储容量相关的当前和历史趋势，查看故障排除建议并将问题描述解决方案分配给其他管理员。</block>
   <block id="38ab7145c9b312e9e1a5380622546696" category="list-text">配置，监控和诊断保护关系问题</block>
-  <block id="0808b6ab518dff39e7d02f5f2c43011c" category="inline-link-macro">《 Active IQ Unified Manager 保护指南》</block>
-  <block id="2ddeecbc7248d216919b53b0bc4c539a" category="paragraph">创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 <block ref="b4eab4c42ec7f7100184207b5832d1dd" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="b16a008feac2fca1e9fd0af37cfb7886" category="list-text">创建备份文件并从备份文件还原数据。</block>
   <block id="50f1945f83f8faaf1e24a4851b01f6bc" category="list-text">将存储对象与标注关联</block>
   <block id="dee1e75ffa4cde3d8824fa5a6144248f" category="paragraph">通过将存储对象与标注关联，存储管理员可以筛选和查看与存储对象相关的事件，从而使存储管理员能够确定与事件相关的问题的优先级并解决这些问题。</block>
-  <block id="af72e4a0267d9949729e09700b75184d" category="list-text">使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 <block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="b8496a14ff4b794a94b62e121844a8ad" category="list-text">向技术支持发送支持包</block>
   <block id="c378b949211960b7600706f3b0b6c302" category="paragraph">存储管理员可以使用维护控制台检索支持包并将其发送给技术支持。如果问题描述需要比 AutoSupport 消息更详细的诊断和故障排除信息，则必须将支持包发送给技术支持。</block>
   <block id="af97b464ed741302dba625389e090a6c" category="summary">您可以在 Unified Manager 中创建组来管理存储对象。了解有关组的概念以及如何通过组规则向组添加存储对象，将有助于您管理环境中的存储对象。</block>
@@ -3232,13 +3207,10 @@
   <block id="1f3804a712ae0ea4c9aeac877f68a7ca" category="list-text">节点清单和节点性能页面</block>
   <block id="342b0f6cd8ee0fd78fca9dd7e45a03d3" category="list-text">StorageVM 清单， StorageVM 运行状况和 StorageVM 性能页面</block>
   <block id="1dc40ad03f73a1e16893b4e4bfcdf3e1" category="list-text">保护关系页面</block>
-  <block id="d2e5b8d7d05b0bde3c190ae9547acc73" category="summary">本指南包含有关 Active IQ Unified Manager 为解决数据存储容量，可用性和保护问题而提供的两个用户界面的信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。</block>
   <block id="ec731d5e7e0cf391407e9c8ac3e4caed" category="doc">用于管理存储系统运行状况的 Unified Manager 接口</block>
   <block id="60d0bc57a0a67c2973b6e48ff1d90534" category="paragraph">如果要使用 Unified Manager 中的保护功能，还必须安装和配置 OnCommand Workflow Automation （ WFA ）。</block>
   <block id="79500a96134ea895ab9ad39cf0211ea0" category="paragraph">通过 Unified Manager Web UI ，管理员可以监控与数据存储容量，可用性和保护相关的集群问题并对其进行故障排除。</block>
-  <block id="216b57dea44dfc57b138e3d37aefffcb" category="paragraph">本指南介绍了管理员在对 Unified Manager Web UI 中显示的存储容量，数据可用性或保护问题进行故障排除时可以遵循的一些常见工作流。</block>
   <block id="601a076ceb57e2d6ddb048ba06d7a67a" category="paragraph">通过 Unified Manager 维护控制台，管理员可以监控，诊断和解决操作系统问题，版本升级问题，用户访问问题以及与 Unified Manager 服务器本身相关的网络问题。如果 Unified Manager Web UI 不可用，则只能通过维护控制台访问 Unified Manager 。</block>
-  <block id="7acb8b5fbc7c25eb181e57322de80859" category="paragraph">本指南提供了访问维护控制台以及使用此控制台解决与 Unified Manager 服务器运行相关的问题的指导。</block>
   <block id="aba678166340854fcdc83e4d6d99ca89" category="summary">您可以向标注添加值，然后将存储对象与特定标注名称 - 值对关联起来。将值添加到标注有助于更有效地管理存储对象。</block>
   <block id="ec1131dba2b36036c9d1d87fb431852d" category="doc">将值添加到标注</block>
   <block id="cce07a2d18b395b6cb7fa90f867659a1" category="paragraph">您不能向预定义标注添加值。</block>
@@ -4348,8 +4320,6 @@
   <block id="0c8699048289beedeedb54f53b9ba0e1" category="paragraph"><block ref="0c8699048289beedeedb54f53b9ba0e1" category="inline-link-rx"></block></block>
   <block id="79d86beeb01a37f9ec75abd845d3ed41" category="summary">Active IQ Unified Manager 提供了一组 API ，用于通过 RESTful Web 服务界面管理受支持存储系统上的存储资源，以实现任何第三方集成。</block>
   <block id="97fe658caa11a827b1561a6db6e7b2f0" category="doc">Active IQ Unified Manager 入门</block>
-  <block id="578e4c65e2f2ccda698295f2960d9c68" category="paragraph">Unified Manager API 开发人员指南 _ 为您提供了有关 API 和示例代码的信息。通过本指南中提供的信息，您可以为 NetApp 易管理性软件解决方案创建 RESTful 客户端，以管理 NetApp 系统。API 基于表述性状态传输（ Representational State Transfer ， REST ）架构模式。</block>
-  <block id="d5245acd47bece2526aa76e205a7f499" category="paragraph">Unified Manager 可为 NetApp 环境中的存储管理提供 API 服务。所有四个 REST 操作创建，读取，更新和删除（也称为 CRUD ）均受支持。</block>
   <block id="f1827b561032cc12874de0925a08e9de" category="summary">您可以使用 management-server 类别下的 Jobs API 查看异步操作的执行详细信息。</block>
   <block id="a70ffe4d7d938e7da45c7e76de188dae" category="doc">查看作业和系统详细信息</block>
   <block id="ed512537703bc53e8afe4815c83892a1" category="paragraph">您可以使用 `management-server` 类别下的 `Jobs` API 查看异步操作的执行详细信息。使用 `management-server` 类别下的 `ssystem` API ，您可以查看 Active IQ Unified Manager 环境中的实例详细信息。</block>
@@ -4603,9 +4573,7 @@
   <block id="fd40a35b04e72e1f110162f37e9a5415" category="paragraph">API 将返回该集群中的存储卷列表。响应格式与从 ONTAP 运行相同 API 时收到的格式相同。返回的状态代码为 ONTAP REST 状态代码。</block>
   <block id="e8dc00bb5c4a79a30cb6961d8c719c68" category="section-title">正在设置 API 范围</block>
   <block id="876ee7ae93146d0a8658b4651eba9103" category="paragraph">所有 API 都在集群范围内设置了上下文。基于 Storage VM 运行的 API 也会以集群为范围，也就是说， API 操作会在受管集群中的特定 Storage VM 上执行。在运行 ` 网关 // ｛ uuid ｝ /\ ｛ path ｝` API 时，请确保为运行此操作的集群输入集群 UUID （ Unified Manager 数据源 UUID ）。要为该集群中的特定 Storage VM 设置上下文，请输入 Storage VM 密钥作为 X-Dot-SVM-UUID 参数，或者输入 Storage VM 名称作为 X-Dot-SVM-Name 参数。参数将作为筛选器添加到字符串标题中，此操作将在该集群中的该 Storage VM 的范围内运行。</block>
-  <block id="716b5016376bbd3fcbebe6401884d589" category="paragraph">有关使用 ONTAP REST API 的详细信息，请参见《 ONTAP REST API 开发人员指南》。</block>
   <block id="10ca66f0a363b90a579ee48398d9ca6c" category="inline-link">ONTAP REST API 自动化</block>
-  <block id="64bce96c9eeebb3c2c4e4047917784d7" category="paragraph"><block ref="64bce96c9eeebb3c2c4e4047917784d7" category="inline-link-rx"></block></block>
   <block id="ad7ba0a016964f2f0b1c07bca3be8bf6" category="summary">在运行 API 或解决问题时，您应了解 Active IQ Unified Manager API 使用的各种 HTTP 状态代码和错误代码。</block>
   <block id="5c3c5afd883b4629418987f61fd9b72a" category="doc">Active IQ Unified Manager 中使用的 HTTP 状态代码</block>
   <block id="39e304b3b63179c7d3782b452ed3d1dc" category="paragraph">下表列出了与身份验证相关的错误代码。</block>
@@ -5050,10 +5018,6 @@
   <block id="c56905729fc808fe336ea9bf2ca70060" category="paragraph">逻辑存储资源包括所有类型的卷和 qtree ，以及可用于这些资源的功能和配置，例如 Snapshot 副本，重复数据删除，数据压缩和配额。</block>
   <block id="bd5fde075b251b5502969a404a6f6bea" category="paragraph">下图显示了双节点集群中的存储资源：</block>
   <block id="d48282ae57cfe1c6851ddf5ed32ed2dc" category="image-alt">存储资源模型</block>
-  <block id="42ca9b31313a0beb2d48b38e777b7aac" category="summary">本指南面向创建通过 REST API 与 Active IQ Unified Manager 软件连接的应用程序的开发人员。</block>
-  <block id="1beb50c2864987e0a443567dc2d3f557" category="doc">本指南的受众</block>
-  <block id="f9b753b57152e3473f288bfca41578e6" category="paragraph">本指南还面向希望基本了解如何使用 Unified Manager 中提供的 REST API 构建客户端应用程序以管理和监控 NetApp 存储系统的存储管理员和架构师。</block>
-  <block id="5841c3cbebdeaf4f091c84806e84f634" category="paragraph">如果要使用存储提供程序， ONTAP 集群和管理管理 API 来管理存储，则应使用本指南。</block>
   <block id="4934578b4d9943215b7677832e08ba17" category="paragraph">您必须具有以下角色之一：操作员，存储管理员或应用程序管理员。您必须知道要在其中执行 REST API 的 Unified Manager 服务器的 IP 地址或完全限定域名。</block>
   <block id="6da8ee392d198b3805dfc1065c7d106d" category="summary">您可以使用管理类别下的 API 修改备份设置，验证备份文件信息和集群证书，以及将 ONTAP 集群作为 Active IQ Unified Manager 数据源进行管理。</block>
   <block id="ef6534856e50e6523e29bf37e4a45e63" category="doc">执行管理任务</block>
@@ -5093,9 +5057,6 @@
   <block id="67dbb1f6790f1356816b7c1f7d9e79f1" category="paragraph">在运行工作流步骤之前，请确保满足以下条件：</block>
   <block id="13d26d61e105eac658b26eb7233558ec" category="list-text">您了解网关 API 及其使用方式。有关信息，请参见 "`网关 API` " 一节。</block>
   <block id="b9a74ea4cc3968aa390e4a126aaaaaa7" category="paragraph"><block ref="b9a74ea4cc3968aa390e4a126aaaaaa7" category="inline-link-macro-rx"></block></block>
-  <block id="fb93d0ceba2d361c56d4fa7956d3c79a" category="list-text">您了解 ONTAP REST API 的使用情况。有关使用 ONTAP REST API 的信息，请参见 _API ONTAP REST API 开发人员指南 _ 。</block>
-  <block id="d3c245e0ba47ccc6c3f574b4025a4f2a" category="inline-link">ONTAP REST API 开发人员指南</block>
-  <block id="dc6fb9bed71b990921b84ce51c06ef16" category="paragraph"><block ref="dc6fb9bed71b990921b84ce51c06ef16" category="inline-link-rx"></block></block>
   <block id="0f95c121d7dad838526a7f651b857814" category="list-text">您是应用程序管理员。</block>
   <block id="82860026803af0cdcc831f5f5030ae00" category="list-text">ONTAP 9.5 或更高版本支持要运行 REST API 操作的集群，并通过 HTTPS 将此集群添加到 Unified Manager 中。</block>
   <block id="98c896958cb9f708964fcc3c7173e78d" category="paragraph">下图说明了问题描述卷容量使用 ONTAP 故障排除工作流中的每个步骤。</block>
@@ -5126,7 +5087,6 @@
   <block id="d5269135257a3821fc8f06cd5f7df19c" category="paragraph">输出显示的卷大小增加了 120 GB 。</block>
   <block id="cf34db983c807f1b3f9a4ea61d46d60a" category="summary">您可以使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量，性能和安全信息来帮助管理集群。</block>
   <block id="d4ebc5d6d732b6ec32a446521b4a3d9a" category="doc">可用于报告的 Unified Manager REST API</block>
-  <block id="a0bf3c3ab8e8109cf98b998018b604d4" category="paragraph">REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关 Unified Manager REST API 的信息，请参见 <block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block>。</block>
   <block id="e562c08e75037d1102362250b8921681" category="paragraph">要访问 REST API ，您必须具有操作员，存储管理员或应用程序管理员角色。</block>
   <block id="78a4d2a5c11fbe0fabc364f927cee430" category="summary">Unified Manager 使用 MySQL 数据库存储其监控的集群中的数据。数据会保留在 MySQL 数据库的各种架构中。</block>
   <block id="d5ea85509854f0a6127fa50e8afb640c" category="doc">Unified Manager 数据库可供自定义报告访问</block>
@@ -5199,7 +5159,6 @@
   <block id="2c20d1fdc733c16bfdde363b7ee6b15a" category="list-text">为未保存的视图命名以保存所做的更改。</block>
   <block id="52be5acc39d8a7670dbcd31c91338f2a" category="summary">您可以在 Unified Manager 中收集有关集群的信息，以便通过 UI ， MySQL 数据库查询和 REST API 创建报告。</block>
   <block id="5fc482204e2b114b41ae634b60c74659" category="doc">用于生成报告的访问点</block>
-  <block id="c26ca00d29aed12fea934a14b85b2edf" category="paragraph">本指南介绍了通过 UI 进行 Unified Manager 报告和计划的信息。</block>
   <block id="24172ece7e058fbf2b29c5d96eeb0d30" category="paragraph">您可以通过三种方式访问 Unified Manager 提供的报告功能：</block>
   <block id="9a849dcfe7e1ec40ab9f6c5993614745" category="list-text">直接从 UI 中的清单页面提取数据。</block>
   <block id="f0ee512588a57491effeae72db062f2c" category="list-text">使用开放式数据库连接（ ODBC ）和 ODBC 工具访问所有可用对象。</block>
@@ -5929,13 +5888,10 @@
   <block id="3833ead277badf6fd54e7d02004043c0" category="paragraph">单击 * 应用筛选器 * 后， " 筛选 " 面板将关闭，应用筛选器并显示应用的筛选器数量（<block ref="106769b36670dda8bedb0e744694e40d" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="11f98082c78bd4b4f7e2b0c02e25913c" category="summary">您可以通过确保正确设置 MetroCluster 配置来防止 MetroCluster 配置中镜像工作负载出现性能问题。您还可以通过更改配置或升级软件或硬件组件来提高工作负载性能。</block>
   <block id="6c13338c46979ee168ed6bef9776fc99" category="doc">MetroCluster 配置验证</block>
-  <block id="146292de9bff0d14d5180fd06a161542" category="paragraph">《 _ISL MetroCluster 安装和配置指南》 _ 介绍了如何在 MetroCluster 配置中设置集群，包括光纤通道（ FC ）交换机，缆线和交换机间链路（ ISL ）。它还有助于您配置 MetroCluster 软件，以便本地和远程集群可以与镜像卷数据进行通信。</block>
-  <block id="a6676e3e225267d921cfd20766bf3b26" category="paragraph">您可以将 MetroCluster 配置与 _Data MetroCluster 安装和配置指南 _ 中的要求进行比较，以确定更改或升级 MetroCluster 配置中的组件是否可以提高工作负载性能。此比较可帮助问题解答您回答以下问题：</block>
   <block id="f0bb9d9bd1477ac75e85e68f732ab7c2" category="list-text">控制器是否适合您的工作负载？</block>
   <block id="6b51233d024bfbd0f40c2c90deedb830" category="list-text">您是否需要将 ISL 捆绑包升级到更大的带宽才能处理更多吞吐量？</block>
   <block id="c77f72edc7bc08ea20404836e2d23cda" category="list-text">您是否可以调整交换机上的缓冲区到缓冲区信用值（ BBC ）以增加带宽？</block>
   <block id="eda02356b488ccb24bdc3a909aebae7d" category="list-text">如果您的工作负载对固态驱动器（ SSD ）存储的写入吞吐量较高，是否需要升级 FC-SAS 网桥以适应此吞吐量？</block>
-  <block id="5e264ebd0e27986d5788537a3b2eba95" category="paragraph">有关更换或升级 MetroCluster 组件的信息，请参见 _SAS MetroCluster 服务指南 _ 。</block>
   <block id="9c909fca5314283822fbb416907c8756" category="summary">您可以为单个性能事件配置警报，就像 Unified Manager 收到的任何其他事件一样。此外，如果您希望对所有性能事件进行同样的处理并将电子邮件发送给同一个人，则可以创建一个警报，以便在触发任何严重或警告性能事件时向您发出通知。</block>
   <block id="57067c6be4ab4eaa74f090996e8090fb" category="doc">为性能事件添加警报</block>
   <block id="6d4252a4f2a90c5f84c11bcea4862641" category="paragraph">以下示例显示了如何为所有严重延迟， IOPS 和 MBps 事件创建事件。您可以使用相同的方法从所有性能计数器中选择事件，并为所有警告事件选择事件。</block>
@@ -6098,7 +6054,6 @@
   <block id="72563a114421d5c552819f674bfc5377" category="summary">Active IQ Unified Manager 提供了两个用户界面，用于监控数据存储性能问题并对其进行故障排除： Web 用户界面和维护控制台。</block>
   <block id="4a6543511f6b6ff2d29a6c6c7a97bdc7" category="doc">用于管理存储系统性能的 Unified Manager 界面</block>
   <block id="851b23a439a1dfe96c533ebe2d9d3f84" category="paragraph">通过 Unified Manager Web UI ，管理员可以监控存储系统与性能相关的问题并对其进行故障排除。</block>
-  <block id="d6312a3110af0b6d27f29c82529abcd1" category="paragraph">本指南介绍了管理员在对 Unified Manager Web UI 中显示的存储性能问题进行故障排除时可以遵循的一些常见工作流。</block>
   <block id="432c4f13204d60726516c41afbe6ceb6" category="paragraph">通过维护控制台，管理员可以监控，诊断和解决操作系统问题，版本升级问题，用户访问问题以及与 Unified Manager 服务器本身相关的网络问题。如果 Unified Manager Web UI 不可用，则只能通过维护控制台访问 Unified Manager 。</block>
   <block id="7e0b13097af7e302bf43084419b58269" category="summary">集群配置数据的收集间隔为 15 分钟。例如，添加集群后，需要 15 分钟才能在 Unified Manager UI 中显示集群详细信息。更改集群时也会应用此间隔。</block>
   <block id="3e358cce145bbdfee1fe080d0284a740" category="doc">集群配置和性能数据收集活动</block>
@@ -6941,9 +6896,6 @@
   <block id="f80167d4c9ac616c8557a447b160b58e" category="paragraph">虚线水平线表示在 ONTAP 中设置的最大或最小吞吐量值。您还可以查看何时对 QoS 值进行了更改。</block>
   <block id="e3356b9fa18847810697e85319871223" category="list-text">要查看与 QoS 设置比较的特定 IOPS 和 MB/ 秒值，请将光标移动到图表区域以查看弹出窗口。</block>
   <block id="3fafca713e2ceac1bbc45fddcbddda8f" category="paragraph">如果您发现某些卷或 LUN 的 IOPS 或 MB/ 秒非常高，并对系统资源造成压力，则可以使用 System Manager 或 ONTAP 命令行界面调整 QoS 设置，以便这些工作负载不会影响其他工作负载的性能。</block>
-  <block id="c5441005fe66b7483c77a681387ba3f2" category="paragraph">有关调整 QoS 设置 ONTAP 的详细信息，请参见 _QoS 9 性能监控高级指南 _ 。</block>
-  <block id="a292889443f4c61cd0e649da7aba0113" category="inline-link">《 ONTAP 9 性能监控高级指南》</block>
-  <block id="2fea2b0ee79f4ef0aafa74a0cf304984" category="paragraph"><block ref="2fea2b0ee79f4ef0aafa74a0cf304984" category="inline-link-rx"></block></block>
   <block id="c18159ce3740e702eae8dada9e86ed46" category="summary">延迟预测是对特定时间的性能上限和下限值的预测。对于工作负载延迟，上限值构成性能阈值。当实际值超过性能阈值时， Unified Manager 将触发动态性能事件。</block>
   <block id="2568937e31fb821e9f6e170c400ff2ff" category="doc">什么是预期性能范围</block>
   <block id="650e7ef0e56dcb57ce661b95de1842ed" category="paragraph">例如，在上午 9 ： 00 之间的正常工作时间下午 5 ： 00 ，大多数员工可能会在上午 9 ： 00 之间查看他们的电子邮件和上午 10 ： 30对电子邮件服务器的需求增加意味着在此期间后端存储上的工作负载活动会增加。员工可能会注意到电子邮件客户端的响应速度较慢。</block>
@@ -11086,7 +11038,6 @@
   <block id="8a13d1a5338f1794b0454274eb4286a1" category="summary">Active IQ Unified Manager 为您提供了 REST API ，用于查看有关监控和管理存储环境的信息。API 还允许根据策略配置和管理存储对象。</block>
   <block id="12d49648274bb61cf34ecef5c6ec1acc" category="doc">使用 Unified Manager REST API</block>
   <block id="3c7317176d7c7efc96ac34c6081c3782" category="paragraph">此外，您还可以使用 Unified Manager 支持的 API 网关在所有 ONTAP 管理的集群上执行 ONTAP API 。</block>
-  <block id="23fcaff94a10432c35d4bf5294d692bd" category="paragraph">有关 Unified Manager REST API 的信息，请参见 <block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block>。</block>
   <block id="2b6a651b25306285bbf3fab16f25d047" category="summary">您可以直接从 Unified Manager 用户界面修复某些 ONTAP 问题，而不必使用 ONTAP System Manager 或 ONTAP 命令行界面。" 管理操作 " 选项可修复已触发 Unified Manager 事件的许多 ONTAP 问题。</block>
   <block id="17d875fb379134387709792c107bfe79" category="doc">直接从 Unified Manager 管理 ONTAP 问题或功能</block>
   <block id="3ef8e1c9b6637e09428aabf40422f1be" category="paragraph">您可以直接从 Unified Manager 用户界面修复某些 ONTAP 问题或管理某些 ONTAP 功能，而无需使用 ONTAP System Manager 或 ONTAP 命令行界面。" `M管理操作` " 选项可修复已触发 Unified Manager 事件的许多 ONTAP 问题。</block>
@@ -11522,4 +11473,52 @@
   <block id="4b182fd97f4652b30a2fb7e34f4c9bf6" category="paragraph">概括介绍Active IQ Unified Manager 9.10的新增功能、限制和已知问题。</block>
   <block id="e3474a37b8b8000684dda99833abd480" category="sidebar">Active IQ Unified Manager 9.10文档</block>
   <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
+  <block id="ffef03803be76fabe5b17e1b0cca3ca2" category="inline-link-macro">Active IQ Unified Manager REST API入门</block>
+  <block id="cb944a353faccd474d54a219e39f21a4" category="paragraph">REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关 Unified Manager REST API 的信息，请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
+  <block id="49a2d659c06bc8361ef02763a5e7645d" category="paragraph">这些部分介绍了通过UI进行Unified Manager报告和计划的信息。</block>
+  <block id="a8b60e1d2eddaf2e0517e5b3d324cf71" category="paragraph">有关 Unified Manager REST API 的信息，请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6c9a87806dcde5d857fc1f3900dfeb8" category="paragraph">有关使用ONTAP REST API的详细信息、请参见<block ref="53e0bb8fc907dc5061ae174c5f0e8c3c" category="inline-link-rx"></block></block>
+  <block id="d56255edf472cd81dccc345368cf704a" category="summary">本节面向创建通过REST API与Active IQ Unified Manager 软件连接的应用程序的开发人员。</block>
+  <block id="13e6ac0d3f3117472ef77f064f6e7875" category="doc">此内容的受众</block>
+  <block id="e70ffe5c1fb97348e2772026bc8f9053" category="paragraph">此处的主题面向创建通过REST API与Active IQ Unified Manager 软件连接的应用程序的开发人员。</block>
+  <block id="07d5d415bfefac25544c64041aa2a8ac" category="paragraph">存储管理员和架构师可以参考此信息、基本了解如何使用Unified Manager REST API构建客户端应用程序来管理和监控NetApp存储系统。</block>
+  <block id="f6d07d9cb69a06c62ecf3ad8f5e5ed11" category="paragraph">如果要使用存储提供程序、ONTAP 集群和管理管理API来管理存储、则应使用此信息。</block>
+  <block id="882ace1b5625d5206c06119e912a445a" category="paragraph">在这些主题中、您可以找到有关Unified Manager API、用于解决特定问题的示例工作流以及一些示例代码的信息。使用此信息、您可以创建NetApp易管理性软件解决方案的RESTful客户端来管理NetApp系统。API 基于表述性状态传输（ Representational State Transfer ， REST ）架构模式。所有四个 REST 操作创建，读取，更新和删除（也称为 CRUD ）均受支持。</block>
+  <block id="ec033dcf5fdadae0c2ee4fad5b7980ac" category="inline-link">ONTAP 自动化文档</block>
+  <block id="b97a1f9b37add50c00a0733ad2d495d6" category="list-text">您了解 ONTAP REST API 的使用情况。有关使用ONTAP REST API的信息、请参见<block ref="3be764d3fde1729a00ba1f231c9aeab3" category="inline-link-rx"></block>。</block>
+  <block id="19b1c6f8f0b7c0254351a2831346249b" category="paragraph">这些部分介绍了管理员在对Unified Manager Web UI中显示的存储性能问题进行故障排除时可以遵循的一些常见工作流。</block>
+  <block id="2d5221b3fd97255641be1a0ca1ef3238" category="paragraph">这些部分提供了访问维护控制台以及使用此控制台解决与Unified Manager服务器运行相关的问题的指导。</block>
+  <block id="c6d03aceb6e28fe114f21b43f5500da1" category="inline-link">性能管理概述</block>
+  <block id="9ec8f00712e23fe1a71f1a667917c8cb" category="paragraph">有关调整QoS设置的详细信息、请参见<block ref="25073b168bb7003d730c7138e2591b6b" category="inline-link-rx"></block>。</block>
+  <block id="1567e926a28e2d218915e48c745420ad" category="paragraph">有关调整QoS设置的详细信息、请参见<block ref="25073b168bb7003d730c7138e2591b6b" category="inline-link-rx"></block>。</block>
+  <block id="7f4d4fbe08a8a895671d05c4a82b0c85" category="inline-link">MetroCluster 文档</block>
+  <block id="2200bc08e5e08d770226d6e584fb6acf" category="paragraph">请参见<block ref="4b197b525e7dc9b10910dc448962240a" category="inline-link-rx"></block> 有关在MetroCluster 配置中设置集群的说明、包括光纤通道(FC)交换机、缆线和交换机间链路(ISL)。它还有助于您配置 MetroCluster 软件，以便本地和远程集群可以与镜像卷数据进行通信。</block>
+  <block id="af94187148a4c8f4c383ffa07b34873e" category="paragraph">您可以将MetroCluster 配置与中的要求进行比较<block ref="4b197b525e7dc9b10910dc448962240a" category="inline-link-rx"></block> 确定更改或升级MetroCluster 配置中的组件是否可以提高工作负载性能。此比较可帮助问题解答您回答以下问题：</block>
+  <block id="9d4e0ffef139e06784b4032d7cd0b60d" category="paragraph">有关更换或升级MetroCluster 组件的信息、请参见<block ref="4b197b525e7dc9b10910dc448962240a" category="inline-link-rx"></block>。</block>
+  <block id="204fe9c6711d4d00c6ae7be4af3ffad2" category="paragraph">您可以稍后在 Web UI 中通过 * 常规 * &gt; * 功能设置 * &gt; * API 网关 * 启用或禁用此设置。有关API的详细信息、请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
+  <block id="b9e7269d85516b8f3e441d258ab0d938" category="paragraph">有关API的详细信息、请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block></block>
+  <block id="207bd85cdd3974db9e04fc5d08c539cc" category="paragraph">有关API的详细信息、请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
+  <block id="493e343ace2014edb515f179a6dd1570" category="paragraph">您可以访问 Web UI 以执行 Unified Manager 的初始设置，如中所述 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
+  <block id="34a79347cdfaf44fb419601fd9f52440" category="paragraph">用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
+  <block id="677bb67b43e56c44269810a302788b34" category="paragraph">这些部分介绍了以下工作流中显示的每个项目。</block>
+  <block id="5e2ca7e27921e5c551d49abb4db102bc" category="paragraph">您可以访问Web UI以执行Unified Manager的初始设置、如中所述 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
+  <block id="35b673088d49c428fe4b71d1fb68ac32" category="paragraph">您可以在以下Windows版本上安装Unified Manager：</block>
+  <block id="f25ae1b1e1c33b9eae4b2b668af49026" category="list-text">Microsoft Windows Server 2016标准版和数据中心版</block>
+  <block id="21fae6ca9851125bcb8a2ae0fceec434" category="list-text">Microsoft Windows Server 2019标准版和数据中心版</block>
+  <block id="8c0efbddadc6fd60891df7fc8dca2445" category="list-text">如果您的Windows系统上安装了活动防病毒软件、则Unified Manager安装可能会失败。在安装Unified Manager之前、应禁用系统上的所有病毒扫描软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：</block>
+  <block id="a443bb5ff4d682a884bc90952a453409" category="list-text">Unified Manager数据目录、例如`C：\ProgramData\NetApp\OnCommandAppData\`</block>
+  <block id="ce5ddf4bea759996010f53b321d1ab17" category="list-text">Unified Manager安装目录、例如、` C：\Program Files\NetApp\`</block>
+  <block id="f9d3a25dc93d1316544e0bc4c27c6779" category="list-text">MySQL数据目录、例如、`C：\ProgramData\MySQLServerData`</block>
+  <block id="fa667d9ec9e561ac6d6553c9ffa6ad45" category="list-text">如果Windows系统上安装了活动防病毒软件、则Unified Manager升级可能会失败。在升级Unified Manager之前、应禁用系统上的所有病毒扫描软件。</block>
+  <block id="35016a16114185b9f23c8e507180958f" category="paragraph">管理员可以监控和管理所监控存储系统资源的性能。请参见 <block ref="ba69bc4fc63cd6b5cc812da4cc091472" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="1e7d610729e888e25e029cecd704dac0" category="paragraph">创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 <block ref="4e76243b1e59b37cf4420efe0ce8dc5b" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="b7f7029b19d9761718c4c55a16cdf61d" category="list-text">使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">磁盘和聚合概述</block>
+  <block id="19c8b2c7c231701f5f56c45000cd9582" category="paragraph">有关FabricPool 聚合的详细信息、请参见<block ref="9923f5cc5c6dab834ea3bb7ffc7dbcfc" category="inline-link-rx"></block>。</block>
+  <block id="d44aaf9fc8b7b474d77879bc4e8cd00a" category="summary">本节介绍了有关Active IQ Unified Manager 为解决数据存储容量、可用性和保护问题而提供的两个用户界面的信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。</block>
+  <block id="fc02256f91be6788baac66e32980c9f1" category="paragraph">这些部分包含有关Active IQ Unified Manager 为解决数据存储容量、可用性和保护问题而提供的两个用户界面的信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。</block>
+  <block id="87b418cd1be42fdcae7cfbe253627d42" category="paragraph">这些部分介绍了管理员在对Unified Manager Web UI中显示的存储容量、数据可用性或保护问题进行故障排除时可以遵循的一些常见工作流。</block>
+  <block id="39d16b9f4dce68f8146223fd30f02e44" category="paragraph">您可以使用此信息访问维护控制台并使用它解决与Unified Manager服务器运行相关的问题。</block>
+  <block id="c37949fda7ff1b2246f6718aca6092a2" category="list-text">您必须已按照中的说明在Linux服务器上安装Unified Manager <block ref="e8607b27bcb98464e6dcda8f12f8aa38" category="inline-link-macro-rx"></block>。</block>
+  <block id="362bda8047ba899ec7fa3be3f8333688" category="paragraph">访问Web UI以更改umadmin用户的默认密码、并执行Unified Manager的初始设置、如中所述 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
 </blocks>

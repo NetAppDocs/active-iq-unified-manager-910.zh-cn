@@ -44,6 +44,7 @@ link:reference_windows_software_and_installation_requirements.html["Windows 软�
 
 * 在升级期间，系统可能会提示您确认是要保留先前的默认设置以将性能数据保留 13 个月，还是将其更改为 6 个月。确认后，将清除 6 个月后的历史性能数据。
 * 在升级之前，您应关闭 _<INSTALLDIR>\JDK_ 和 _MySQL Data Directory_ 中所有打开的文件或文件夹。
+* 如果Windows系统上安装了活动防病毒软件、则Unified Manager升级可能会失败。在升级Unified Manager之前、应禁用系统上的所有病毒扫描软件。
 
 
 在升级过程中， Unified Manager 不可用。在升级 Unified Manager 之前，您应完成所有正在运行的操作。

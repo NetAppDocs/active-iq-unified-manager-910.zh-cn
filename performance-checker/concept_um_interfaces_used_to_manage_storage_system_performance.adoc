@@ -19,7 +19,7 @@ Active IQ Unified Manager 提供了两个用户界面，用于监控数据存储
 
 通过 Unified Manager Web UI ，管理员可以监控存储系统与性能相关的问题并对其进行故障排除。
 
-本指南介绍了管理员在对 Unified Manager Web UI 中显示的存储性能问题进行故障排除时可以遵循的一些常见工作流。
+这些部分介绍了管理员在对Unified Manager Web UI中显示的存储性能问题进行故障排除时可以遵循的一些常见工作流。
 
 
 
@@ -27,4 +27,4 @@ Active IQ Unified Manager 提供了两个用户界面，用于监控数据存储
 
 通过维护控制台，管理员可以监控，诊断和解决操作系统问题，版本升级问题，用户访问问题以及与 Unified Manager 服务器本身相关的网络问题。如果 Unified Manager Web UI 不可用，则只能通过维护控制台访问 Unified Manager 。
 
-本指南提供了访问维护控制台以及使用此控制台解决与 Unified Manager 服务器运行相关的问题的指导。
+这些部分提供了访问维护控制台以及使用此控制台解决与Unified Manager服务器运行相关的问题的指导。
