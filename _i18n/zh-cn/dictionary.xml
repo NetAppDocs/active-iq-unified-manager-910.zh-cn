@@ -96,27 +96,13 @@
   <block id="05377efb6e728732c9306b0df5e826e0" category="doc">安装 Unified Manager 后升级第三方产品</block>
   <block id="1c07aad8c135f1160c0e64c5a58afc4c" category="paragraph">如果 Unified Manager 已安装在 Linux 系统上，则可以升级第三方产品，例如 JRE 。</block>
   <block id="88f52a8d98ed293c3b3467272c571594" category="paragraph">开发这些第三方产品的公司会定期报告安全漏洞。您可以按自己的计划升级到此软件的较新版本。</block>
-  <block id="63abb0f288c1d7a899870a973e2a1a26" category="summary">您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。</block>
-  <block id="bae43629fc80334bfb253eda91870d0a" category="doc">在 Linux 上升级 MySQL</block>
-  <block id="9f5b309ea6f5c0107df68af41b42385c" category="paragraph">您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 9.10 升级过程会自动将 MySQL 升级到 8.0.27 。您不应将 MySQL 从早期版本独立升级到 8.0.27 。</block>
   <block id="76b45bd64e794aa15caf86e164b12820" category="paragraph">对于安装了 Unified Manager 的 Linux 系统，您必须具有 root 权限。</block>
-  <block id="ca431acdff879bf74443b03a3ea7b05e" category="paragraph">您只能将 MySQL 8.0.27 的基本版本升级到更高版本，以便进行次要更新。</block>
   <block id="f53d1531676d47e1ac40a9a7f8022ad4" category="list-text">以 root 用户身份登录到 Unified Manager 主机。</block>
-  <block id="7bb52bb3ab7705ec1ebfe15ec998339e" category="list-text">在目标系统上下载最新的 MySQL Community Server ` .rpm` 软件包。</block>
-  <block id="5115846061c6b31d315d4c6bb626ceb3" category="list-text">将捆绑包解压缩到目标系统上的目录。</block>
-  <block id="4276a11fa4b3253f36d59f5a58894c99" category="list-text">在取消绑定后，您会在目录中获得多个 ` .rpm` 软件包，但 Unified Manager 仅需要以下 rpm 软件包：</block>
-  <block id="0dd020de8717fef4759ed42bb7a9371e" category="list-text">mysql-commune-client-8.0.27</block>
-  <block id="54bf75329ac0640a1a4b19d525aa3298" category="list-text">mysql-commune-libs-8.0.27</block>
-  <block id="5d2f50f494763ca33ac61b7394b49365" category="list-text">mysql-commune-server-8.0.27</block>
-  <block id="9b02dcce074ad8f0677667ae3bdefe4a" category="list-text">mysql-commune-common-8.0.27</block>
-  <block id="ebda0ef640f941a251bca0c42fabf09b" category="list-text">mysql-commune-client-plugins-8.0.27 删除所有其他 ` .rpm` 软件包。但是，将所有软件包安装在 rpm 软件包中不会出现发生原因错误。</block>
   <block id="dc0f63223f9fd934e2a95489bf3b41fc" category="list-text">按所示顺序停止 Unified Manager 服务和关联的 MySQL 软件：</block>
   <block id="404da40c487927dba2ac8fbeaf4164c7" category="paragraph">`systemctl stop ocieau`</block>
   <block id="67c3532937b08ee6ee4886253d23ae77" category="paragraph">`systemctl stop ocie`</block>
   <block id="9598c79c23eecd03d44d0bc68e248fac" category="paragraph">`systemctl stop mysqld`</block>
-  <block id="eae89bda96fabfefa8a04410a0c097c9" category="list-text">使用以下命令调用 MySQL 升级：</block>
   <block id="6b749e1d94f532680ad5ca3ff3bd464d" category="paragraph">`yum install * 。 rpm`</block>
-  <block id="88cec1dadd0e1340a40d970cdb523c8e" category="paragraph">*` .rpm` 是指下载较新版本 MySQL 的目录中的 ` .rpm` 软件包。</block>
   <block id="689098dd33af80b8a480febade80a626" category="list-text">按所示顺序启动 Unified Manager ：</block>
   <block id="c296640e14086f0c65597a8f86200a7f" category="paragraph">`systemctl start mysqld`</block>
   <block id="9189a17a0b9197d3243162eb3951a42e" category="paragraph">`systemctl start ocie`</block>
@@ -498,29 +484,19 @@
   <block id="4ccc693abf0d23c0d512da6d155ea5e9" category="paragraph">此操作完成后，此软件将被删除。卸载后， ` /opt/netapp/data` 目录中的所有数据都会移至 ` /opt/netapp/data/backup` 文件夹。卸载 Unified Manager 还会删除 Java 和 MySQL 软件包，除非系统上的任何其他应用程序需要并使用这些软件包。但是，不会删除 MySQL 数据。</block>
   <block id="b29348a660e9e748ea4fd292d57cfaf5" category="summary">您可以通过在 Red Hat 平台上下载并运行安装文件来升级 Unified Manager 。</block>
   <block id="0521c408c6c49e7445ee8ef5abc25b44" category="doc">升级 Unified Manager</block>
-  <block id="13ddd135bd2860acc9d2a7dde58cf8b6" category="paragraph">您可以通过在 Red Hat 平台上下载并运行安装文件从 Unified Manager 9.8 或 9.9 升级到 9.10 。</block>
   <block id="851b63dfbfda9a56a4773ddff04a3bb8" category="list-text">要升级 Unified Manager 的系统必须满足系统和软件要求。</block>
   <block id="476492554416aa7a1518b6deeea2245d" category="list-text">在升级 Unified Manager 之前，您必须安装或升级到正确版本的 OpenJDK 。</block>
   <block id="7db7f0fa38ea709bf1cfa08b1cc2edf4" category="inline-link-macro">在 Linux 上升级 JRE</block>
-  <block id="2aa54191149938bc7a863157c2ffb17b" category="paragraph"><block ref="2aa54191149938bc7a863157c2ffb17b" category="inline-link-macro-rx"></block></block>
   <block id="e4ed881267e1fda6e2abe689c01e2602" category="list-text">您必须已订阅 Red Hat Enterprise Linux 订阅管理器。</block>
   <block id="ed2c45fc23f3cfea044bc28997ea71c4" category="list-text">为了避免数据丢失，如果在升级期间存在问题描述，则必须已为 Unified Manager 数据库创建备份。此外，建议您将备份文件从 ` /opt/netapp/data` 目录移动到外部位置。</block>
   <block id="0a1c647277efefc75723a4d91b7d27a9" category="list-text">在升级期间，系统可能会提示您确认是要保留先前的默认设置以将性能数据保留 13 个月，还是将其更改为 6 个月。确认后，将清除 6 个月后的历史性能数据。</block>
   <block id="57631e141b8f0f57a0f764b018516b87" category="list-text">您应已完成所有正在运行的操作，因为 Unified Manager 在升级过程中不可用。</block>
-  <block id="37354e6beb8513ddd7766e179aaab3e2" category="list-text">* MySQL 要求 * ：在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。</block>
-  <block id="1db6ec26f9e37dfe675bdaf66bc0347c" category="paragraph">但是，您可能需要将 MySQL 升级到系统上的最新次要版本。在升级到下一个次要版本之前，请确保系统上的 MySQL 基本版本为 8.0.27 。</block>
-  <block id="a1071bfb77eca5179d618fb7269b7629" category="paragraph">如果您的站点没有配置 MySQL 8.0.27 的存储库，则可能无法升级 Unified Manager 。要在升级之前配置存储库，请执行以下步骤：</block>
-  <block id="8bd7aee1af6eb4a67ab8ad5f5b38af79" category="list-text">下载所需最低版本的 MySQL RPM 软件包（在本例中为 8.0.27 ），并将其保存在存储 `netapp-um&lt;version&gt;.x86_64` 的同一目录中。</block>
-  <block id="9036fc0a5fcfd893d6d6b4578a8aea1f" category="list-text">运行此命令以安装新版本： `yum install * 。 rpm`</block>
   <block id="d37d0b63e336071083beff10d6864144" category="list-text">启动 Unified Manager 服务器。运行以下命令：</block>
   <block id="d29364de1efc0d3a8b2b3b2e091e6ce6" category="list-text">登录到目标 Red Hat Enterprise Linux 或 CentOS 服务器。</block>
   <block id="9d8fac2d2928116ea867fc277420d176" category="list-text">将 Unified Manager 捆绑包下载到服务器。</block>
-  <block id="695f29bf51cbea156d6a3bd63936f89a" category="inline-link-macro">下载适用于 Red Hat 或 CentOS 的 Unified Manager</block>
-  <block id="2fdc3e6b375749d3c8daa762cc26fb19" category="paragraph"><block ref="2fdc3e6b375749d3c8daa762cc26fb19" category="inline-link-macro-rx"></block></block>
   <block id="504dbb205bd882bee9deb15c21374875" category="list-text">导航到目标目录并展开 Unified Manager 捆绑包：</block>
   <block id="d5722027e2a50bb22675e35c697d66bc" category="paragraph">`解压缩 ActiveIQUnifiedManager-&lt;version&gt;.zip`</block>
   <block id="7bb204b5f67b764fc72caaecefac611c" category="paragraph">Unified Manager 所需的 RPM 模块将解压缩到目标目录。</block>
-  <block id="7e07986bfacb6a9e183b787721490668" category="list-text">* 可选： * 对于未连接到 Internet 或未使用 Red Hat Enterprise Linux 存储库的系统，请执行以下步骤以确定是否缺少任何所需的软件包并下载这些软件包：</block>
   <block id="7968abcba566c0045dfcdfef6dde2686" category="list-text">查看可用和不可用软件包的列表：</block>
   <block id="b733ff9eca50d1215b2b36356cb2a337" category="paragraph">`yum install netapp-um&lt;version&gt;.x86_64.rpm -assumeno`</block>
   <block id="73d14496773e8fcb614ca5e1104b5e41" category="list-text">在可访问 Internet 的其他系统上，运行以下命令以下载缺少的软件包。</block>
@@ -528,15 +504,10 @@
   <block id="2080ee244c1ba0254840c6ec5cdf24cb" category="paragraph">软件包将下载到指定的目录 ` -downloaddir=` 。</block>
   <block id="ee8dc4d60c918170a3d15f1ce815c485" category="paragraph">由于在 Red Hat Enterprise Linux 系统上并非始终启用插件 "`yum 插件 -downloadonly` " ，因此，您可能需要启用此功能才能在不安装软件包的情况下下载软件包：</block>
   <block id="edb2040bce41ec5c106522a25e168f05" category="paragraph">`yum install yum-plugin-downloadonly`</block>
-  <block id="8aeb73340c979364beb868b049227251" category="list-text">在安装系统中创建一个新目录，并从连接到 Internet 的系统复制下载的软件包。</block>
-  <block id="87db1d4dd581fcd8819e6f8f1b9ec2db" category="list-text">将目录更改为安装系统上的新目录，并运行以下命令以安装 MySQL Community Edition 及其依赖项。</block>
   <block id="326019e5c5b887e8dfe56f213be36e39" category="list-text">运行安装前脚本，以确保没有可能与升级冲突的系统配置设置或安装的任何软件：</block>
-  <block id="01251d33fe5ea0b5b0b5b7882fff8800" category="paragraph">预安装脚本会检查系统是否具有有效的 Red Hat 订阅，以及是否有权访问所需的软件存储库。如果此脚本发现任何问题，则必须在升级 Unified Manager 之前修复这些问题。</block>
   <block id="3dd2f0172eaa00cd434319d564dad025" category="list-text">使用以下脚本升级 Unified Manager ：</block>
   <block id="7235fc94d270002699e871e8bad9343e" category="paragraph">`upgrade.sh`</block>
-  <block id="4ecfa114f2c16c2c36546338cfb07e53" category="paragraph">此脚本会自动执行 RPM 模块，从而升级所需的支持软件以及运行在这些模块上的 Unified Manager 模块。此外，升级脚本还会检查是否存在任何可能与升级冲突的系统配置设置或安装的任何软件。如果此脚本发现任何问题，则必须在升级 Unified Manager 之前修复这些问题。</block>
   <block id="a1dc836a95e30b0785dbc6baa6107b89" category="list-text">升级完成后，滚动回各个消息，直到您看到显示 Unified Manager Web UI 的 IP 地址或 URL ，维护用户名（ umadmin ）和默认密码的消息为止。</block>
-  <block id="6215911f475ff09e4aefe28c03aa0e5a" category="paragraph">在支持的 Web 浏览器中输入指定的 IP 地址或 URL 以启动 Unified Manager Web UI ，然后使用先前设置的相同维护用户名（ umadmin ）和密码登录。</block>
   <block id="91d9102f2b20d2487525cb47bf7d79a5" category="summary">Active IQ Unified Manager ， AIQUM 文档， UM 文档</block>
   <block id="4a58c6ba2ac7cf0f2cd001d223b14e50" category="doc">Active IQ Unified Manager 文档</block>
   <block id="69b2ae16273665eaebb99a26650649b5" category="doc">Windows 安装快速入门说明</block>
@@ -11521,4 +11492,34 @@
   <block id="39d16b9f4dce68f8146223fd30f02e44" category="paragraph">您可以使用此信息访问维护控制台并使用它解决与Unified Manager服务器运行相关的问题。</block>
   <block id="c37949fda7ff1b2246f6718aca6092a2" category="list-text">您必须已按照中的说明在Linux服务器上安装Unified Manager <block ref="e8607b27bcb98464e6dcda8f12f8aa38" category="inline-link-macro-rx"></block>。</block>
   <block id="362bda8047ba899ec7fa3be3f8333688" category="paragraph">访问Web UI以更改umadmin用户的默认密码、并执行Unified Manager的初始设置、如中所述 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
+  <block id="c4d6a904ef528003bf03bc2e65cffd26" category="summary">支持的升级路径</block>
+  <block id="c481b1965d09fbd3519296d4223038b5" category="doc">Unified Manager版本支持的升级路径</block>
+  <block id="55f88063a0c3a7cf98a94375e0ff3a42" category="paragraph">Active IQ Unified Manager 支持每个版本使用特定的升级路径。</block>
+  <block id="0cc0be218342b94d9a48cf61c6c70c26" category="paragraph">并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.8和9.9升级到Unified Manager 9.10。</block>
+  <block id="70494063bddf48bdd98e37fe20fb89ab" category="paragraph">如果您运行的版本早于受支持的版本、则需要先将Unified Manager实例升级到受支持的版本之一、然后再升级到当前版本。</block>
+  <block id="c3ca41ae62f2eb709d2fe124db7f5656" category="paragraph">例如、如果您安装的版本是OnCommand Unified Manager 9.5、而您希望升级到最新版本的Active IQ Unified Manager 9.10、则可以执行一系列升级。</block>
+  <block id="bdc6e309ce890855fc43da7b57bcc96d" category="list-title">升级路径示例：</block>
+  <block id="c352389d4f5272bf4b0e95aaa632c6dd" category="list-text">升级OnCommand Unified Manager 9.5 -&gt; Active IQ Unified Manager 9.7。</block>
+  <block id="7568484fc77cea5513a23c08df445958" category="list-text">升级9.7 -&gt; 9.9。</block>
+  <block id="862b284b4df55f9b1c187c9774e06bab" category="list-text">升级9.9 -&gt; 9.10。</block>
+  <block id="735de3cfc0c0985a1a724be6fb3d04d4" category="inline-link">知识库(KB)文章</block>
+  <block id="7ff27f75b12e833d98540444694dad8f" category="paragraph">有关升级路径列表的详细信息、请参见此内容<block ref="873d5f2f4cecdaf6f22eb65b543f2b7f" category="inline-link-rx"></block>。</block>
+  <block id="c181bfc3427dc5470dd828c5c382bd2d" category="paragraph">7/TCP</block>
+  <block id="6a9309c72e38a0bef3a8045000f18894" category="paragraph">您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.8或9.9升级到9.10。</block>
+  <block id="c2b9500958337e132bb4c59a38c16982" category="paragraph">请参见 <block ref="6809e5c79eb6a750a89a2ba4592b6b72" category="inline-link-macro-rx"></block>。</block>
+  <block id="243d6bc952dfb325a1c7b89867c2c787" category="paragraph">请参见 <block ref="0861efbc0e36d8801897a77131dac3d0" category="inline-link-macro-rx"></block>。</block>
+  <block id="afe5c010af77ce694e2ae10478226295" category="paragraph">请参见 <block ref="2aa54191149938bc7a863157c2ffb17b" category="inline-link-macro-rx"></block>。</block>
+  <block id="3cb8dc09c586110275df9b4b9ab47229" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。</block>
+  <block id="50c58444f7c8af673d49a884c3e2c493" category="inline-link-macro">下载Unified Manager for Linux</block>
+  <block id="c093aa8824c5e3548de7b89baefcdf62" category="paragraph">请参见 <block ref="834cdb253956e69f96299891384c2c48" category="inline-link-macro-rx"></block>。</block>
+  <block id="e1233ae0e0972a0fbb3e6277c96493c5" category="paragraph">预安装脚本会检查系统是否具有有效的Red Hat Enterprise Linux订阅、以及是否有权访问所需的软件存储库。如果此脚本发现任何问题、您必须修复这些问题并继续升级。</block>
+  <block id="7e2f44ebcb2774746086a5553cda621d" category="inline-link-macro">要对缺少的软件包执行的其他步骤</block>
+  <block id="7a2d1b2a3706bae597eca9bb2c18426e" category="paragraph">如果检测到任何缺少的软件包、请执行中所述的步骤 <block ref="9f51298a2809ee56a4dbb8cc04da1d39" category="inline-link-macro-rx"></block>。如果没有缺少的软件包、请继续执行以下步骤。</block>
+  <block id="fb8301618e50d35e5e061bc7e6fc02d1" category="paragraph">此脚本会自动执行 RPM 模块，从而升级所需的支持软件以及运行在这些模块上的 Unified Manager 模块。此外，升级脚本还会检查是否存在任何可能与升级冲突的系统配置设置或安装的任何软件。如果此脚本发现任何问题，则必须在升级 Unified Manager 之前修复这些问题。如果先前在升级Unified Manager之前安装了软件包、例如_net-snmp_、则MySQL依赖关系可能会在升级期间卸载该软件包。要继续使用该软件包、您需要再次手动安装该软件包。</block>
+  <block id="fc72131d5091c3bd5447165448930b3f" category="paragraph">在支持的Web浏览器的新窗口中输入指定的IP地址或URL以启动Unified Manager Web UI、然后使用先前设置的相同维护用户名(umadmin)和密码登录。</block>
+  <block id="c7f0c3c232f17240e153bcff468b4b86" category="paragraph">如果在升级期间检测到站点上缺少任何软件包、或者您的系统未连接到Internet、或者您未使用Red Hat Enterprise Linux存储库、请执行以下步骤以确定是否缺少任何必需的软件包并下载这些软件包。</block>
+  <block id="fda5e50208306c98484c0041147f0c64" category="admonition">这些步骤需要在主操作步骤 的步骤_5_之后执行。此操作步骤 将升级Unified Manager、您无需运行任何其他升级步骤。</block>
+  <block id="098f9c8760d143ea65998c16b9355dc8" category="list-text">将下载的软件包复制到安装系统上解压缩Unified Manager软件包的目录。</block>
+  <block id="eb48c0935181b533718e0dc01d2336f0" category="list-text">将目录更改为该目录、然后运行以下命令以安装缺少的软件包及其依赖项。</block>
+  <block id="ccb2222b0ddd075041c68e90def28092" category="paragraph">此过程将完成Unified Manager升级过程。在支持的Web浏览器的新窗口中输入指定的IP地址或URL以启动Unified Manager Web UI、然后使用先前设置的相同维护用户名(umadmin)和密码登录。</block>
 </blocks>
