@@ -34,4 +34,4 @@ Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较�
 
 规则文件将在 Unified Manager 服务器上解压缩。在受管集群午夜后生成 AutoSupport 文件后， Unified Manager 将根据规则文件检查集群，并根据需要生成新的风险和意外事件。
 
-有关详细信息、请参见此知识库(KB)文章： link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_update_AIQCASecure_rules_manually_in_AIQUM["如何在AIQUM中手动更新AIQCASecure规则"]
+有关详细信息、请参见此知识库(KB)文章：link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_update_AIQCASecure_rules_manually_in_Active_IQ_Unified_Manager["如何在Active IQ Unified Manager 中手动更新AIQCASecure规则"^]。

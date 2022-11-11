@@ -9811,7 +9811,6 @@
   <block id="ae48afa96207ddbaa3cc0fd8af90a98e" category="list-text">选择要还原到的集群， SVM 和卷。</block>
   <block id="bc621350fbc23e6ec1741153ed6e331f" category="list-text">在名称表中，选择目录名称。</block>
   <block id="2d0fcfb8d7bf7c097d1eab05f1ec38bf" category="list-text">单击 * 选择目录 * 。</block>
-  <block id="ef2e98478d29a26f02db2c56ea13bc57" category="paragraph">如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用 OnCommand 云管理器执行此配置步骤。</block>
   <block id="7331ad8836c59b4b432445f8fc5c99e4" category="summary">您可以使用版本灵活的复制和备份选项功能创建 SnapMirror 关系。通过备份选项功能，您可以实施 SnapMirror 保护，并在目标位置保留多个版本的备份副本。</block>
   <block id="e36facec58d4fd1ab5145c36e21c2862" category="doc">使用版本灵活复制和备份选项创建 SnapMirror 关系</block>
   <block id="3548e0e1f21a7e1571e5fe3cbe618416" category="list-text">源和目标 SVM 必须都启用了 SnapVault 许可证。</block>
@@ -11438,8 +11437,6 @@
   <block id="e06e49da3fb49fecd85244c11ba7754d" category="list-text">您只能在同一版本的Active IQ Unified Manager 上还原Snapshot副本。</block>
   <block id="839fa2b63b981f33da59323dbb6922ca" category="doc">在Windows上指定Snapshot副本的目标位置</block>
   <block id="895ab5c620e863020033929131d3f188" category="list-text">退出维护控制台并启动Active IQ Unified Manager 界面、为Snapshot副本创建计划。</block>
-  <block id="1024da4d1e601efc60b6d334667fb372" category="inline-link-macro">如何在AIQUM中手动更新AIQCASecure规则</block>
-  <block id="ab8d738b545ae820bcf3e08c1381f9d5" category="paragraph">有关详细信息、请参见此知识库(KB)文章： <block ref="2880d9e8074f03320d24915675f84536" category="inline-link-macro-rx"></block></block>
   <block id="97bbb871095678061fcc80b68b1e751b" category="paragraph">为此、它会比较集群中所有节点的已用性能容量值、以查看是否有任何节点超过30%阈值超过24小时。这是一个警告事件。</block>
   <block id="4b182fd97f4652b30a2fb7e34f4c9bf6" category="paragraph">概括介绍Active IQ Unified Manager 9.10的新增功能、限制和已知问题。</block>
   <block id="e3474a37b8b8000684dda99833abd480" category="sidebar">Active IQ Unified Manager 9.10文档</block>
@@ -11522,4 +11519,7 @@
   <block id="098f9c8760d143ea65998c16b9355dc8" category="list-text">将下载的软件包复制到安装系统上解压缩Unified Manager软件包的目录。</block>
   <block id="eb48c0935181b533718e0dc01d2336f0" category="list-text">将目录更改为该目录、然后运行以下命令以安装缺少的软件包及其依赖项。</block>
   <block id="ccb2222b0ddd075041c68e90def28092" category="paragraph">此过程将完成Unified Manager升级过程。在支持的Web浏览器的新窗口中输入指定的IP地址或URL以启动Unified Manager Web UI、然后使用先前设置的相同维护用户名(umadmin)和密码登录。</block>
+  <block id="f76a02997799aac32e213591073ce977" category="inline-link-macro">如何在Active IQ Unified Manager 中手动更新AIQCASecure规则</block>
+  <block id="430faf3dc4359c7567b9aa2464e05a7b" category="paragraph">有关详细信息、请参见此知识库(KB)文章：<block ref="5bddd87587ead14d65a9ed529343bb03" category="inline-link-macro-rx"></block>。</block>
+  <block id="747c77249313eab0521246ecfbad977b" category="paragraph">如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用BlueXP执行此配置步骤。</block>
 </blocks>
