@@ -11057,9 +11057,6 @@
   <block id="7f874cc30f7d82ad122626a3fcf7a4f4" category="paragraph">请修复以串行方式运行的所有操作，以便在查看 * 进行中 * 面板时，某些对象的状态为 * 进行中 * ，而其他对象的状态为 * 已计划 * ，这意味着它们仍在等待实施。</block>
   <block id="fee984743f91b24dec86f77ceb6dd622" category="summary">您可以使用集群设置页面查看集群清单。您可以查看有关集群的详细信息，例如集群名称或 IP 地址以及通信状态。</block>
   <block id="ee45945ca017877dfd40f7584086a95c" category="doc">查看受监控集群的列表</block>
-  <block id="9dc7252bbef57ce4f0d03bcddb84711c" category="paragraph">集群列表按收集状态严重性级别列进行排序。您可以单击列标题，按不同列对集群进行排序。</block>
-  <block id="45ec896bf3e43c4d453f4fa4f22106ca" category="inline-link-macro">配置 / 集群数据源页面</block>
-  <block id="01b124e9964263d377fc183d69afb2ed" category="paragraph"><block ref="01b124e9964263d377fc183d69afb2ed" category="inline-link-macro-rx"></block></block>
   <block id="03af4afceb5e7c752917f0234eb626d6" category="summary">要快速访问特定对象，您可以使用菜单栏顶部的搜索所有存储对象字段。通过这种对所有对象进行全局搜索的方法，您可以按类型快速查找特定对象。搜索结果按存储对象类型进行排序，您可以使用下拉菜单按对象进一步筛选这些结果。</block>
   <block id="de010e6e50e554c3e541c863fa9a0b9c" category="paragraph">要快速访问特定对象，您可以使用菜单栏顶部的 * 搜索所有存储对象 * 字段。通过这种对所有对象进行全局搜索的方法，您可以按类型快速查找特定对象。搜索结果按存储对象类型进行排序，您可以使用下拉菜单按对象进一步筛选这些结果。</block>
   <block id="436903ec875ba98d74946efb3236fbfb" category="list-text">要执行此任务，您必须具有以下角色之一：操作员，应用程序管理员或存储管理员。</block>
@@ -11369,7 +11366,6 @@
   <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多资源</block>
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager 视频</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager 博客</block>
-  <block id="b4326b5cab8385bbedf7c504d8569004" category="sidebar">早期版本的文档</block>
   <block id="1d6677925b878ba927adf44f615f75db" category="sidebar">在 Linux 系统上安装 Unified Manager</block>
   <block id="c1a9193a29dc40ec352c6691d67ab578" category="sidebar">在 Windows 系统上安装 Unified Manager</block>
   <block id="5fc23f7e4ef2f5b01f7034e6f2ceb340" category="sidebar">在 VMware vSphere 系统上安装 Unified Manager</block>
@@ -11541,4 +11537,8 @@
   <block id="d2136c0320bc784ec5e976cc7c71f93d" category="sidebar">Storage VM运行状况详细信息</block>
   <block id="fbf5dae3b577d533c0b3785c65a5e93f" category="sidebar">集群运行状况详细信息</block>
   <block id="3a63c6b863ef9b4f54c6281b5910c2f9" category="sidebar">聚合运行状况详细信息</block>
+  <block id="228689b16f6e524fb9ed06d81f33db6b" category="paragraph"><block ref="7e3bc202e89677c6d62e218685393bf5" prefix="" category="inline-code"></block> 是启动和停止MySQL服务器所需的守护进程程序。</block>
+  <block id="5d0fa88ad955e8f7f8eefb9aa638abe4" category="paragraph">*您需要什么*</block>
+  <block id="13490f69efe6e04b704eff78476a43b8" category="paragraph">此时将显示Unified Manager管理的存储环境中的所有集群。集群列表按收集状态严重性级别列进行排序。您可以单击列标题，按不同列对集群进行排序。</block>
+  <block id="ede607b26fd609858d7be7ff1e138cb0" category="sidebar">Active IQ Unified Manager 9.9或更早版本的文档</block>
 </blocks>
