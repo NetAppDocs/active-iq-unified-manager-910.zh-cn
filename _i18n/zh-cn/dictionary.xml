@@ -505,7 +505,6 @@
   <block id="3dd2f0172eaa00cd434319d564dad025" category="list-text">使用以下脚本升级 Unified Manager ：</block>
   <block id="7235fc94d270002699e871e8bad9343e" category="paragraph">`upgrade.sh`</block>
   <block id="a1dc836a95e30b0785dbc6baa6107b89" category="list-text">升级完成后，滚动回各个消息，直到您看到显示 Unified Manager Web UI 的 IP 地址或 URL ，维护用户名（ umadmin ）和默认密码的消息为止。</block>
-  <block id="91d9102f2b20d2487525cb47bf7d79a5" category="summary">Active IQ Unified Manager ， AIQUM 文档， UM 文档</block>
   <block id="4a58c6ba2ac7cf0f2cd001d223b14e50" category="doc">Active IQ Unified Manager 文档</block>
   <block id="69b2ae16273665eaebb99a26650649b5" category="doc">Windows 安装快速入门说明</block>
   <block id="c77a66b379540bb4341f088044ab2a10" category="list-text">操作系统： Microsoft Windows Server 2016 和 2019 64 位标准版和数据中心版。支持以下语言：</block>
@@ -11417,7 +11416,6 @@
   <block id="97bbb871095678061fcc80b68b1e751b" category="paragraph">为此、它会比较集群中所有节点的已用性能容量值、以查看是否有任何节点超过30%阈值超过24小时。这是一个警告事件。</block>
   <block id="4b182fd97f4652b30a2fb7e34f4c9bf6" category="paragraph">概括介绍Active IQ Unified Manager 9.10的新增功能、限制和已知问题。</block>
   <block id="e3474a37b8b8000684dda99833abd480" category="sidebar">Active IQ Unified Manager 9.10文档</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="ffef03803be76fabe5b17e1b0cca3ca2" category="inline-link-macro">Active IQ Unified Manager REST API入门</block>
   <block id="cb944a353faccd474d54a219e39f21a4" category="paragraph">REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关 Unified Manager REST API 的信息，请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
   <block id="49a2d659c06bc8361ef02763a5e7645d" category="paragraph">这些部分介绍了通过UI进行Unified Manager报告和计划的信息。</block>
@@ -11545,4 +11543,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="74921508f10ccca3d8de0340bf05a39b" category="sidebar">通过Active IQ Unified Manager (Unified Manager、以前称为OnCommand Unified Manager)、您可以从一个界面监控和管理ONTAP 存储系统的运行状况和性能。本文档库包含9.10版的信息。</block>
+  <block id="6ea56a8072cf044e1de510b8b225ef34" category="sidebar">Active IQ Unified Manager 9.10文档。</block>
 </blocks>
