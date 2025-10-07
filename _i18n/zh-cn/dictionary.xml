@@ -11487,7 +11487,6 @@
   <block id="ccb2222b0ddd075041c68e90def28092" category="paragraph">此过程将完成Unified Manager升级过程。在支持的Web浏览器的新窗口中输入指定的IP地址或URL以启动Unified Manager Web UI、然后使用先前设置的相同维护用户名(umadmin)和密码登录。</block>
   <block id="f76a02997799aac32e213591073ce977" category="inline-link-macro">如何在Active IQ Unified Manager 中手动更新AIQCASecure规则</block>
   <block id="430faf3dc4359c7567b9aa2464e05a7b" category="paragraph">有关详细信息、请参见此知识库(KB)文章：<block ref="5bddd87587ead14d65a9ed529343bb03" category="inline-link-macro-rx"></block>。</block>
-  <block id="747c77249313eab0521246ecfbad977b" category="paragraph">如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用BlueXP执行此配置步骤。</block>
   <block id="25cd83fcc24b4664d675c70561908db4" category="section-title">配置SELinux环境条件<block ref="7e1f8730cbdb33df27f5c6a989e8b48a" prefix=" " category="inline-code"></block> 已挂载</block>
   <block id="8952b2e8f374ce39efcf65ab76f1fb96" category="section-title">配置SELinux环境条件<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 已挂载、和<block ref="90858e32055033b8ac44ac8a8f3461ae" prefix=" " category="inline-code"></block> 也单独挂载</block>
   <block id="c0f62aa70775648ddb09e5af32691c1a" category="section-title">配置SELinux环境条件<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 已挂载、和<block ref="90858e32055033b8ac44ac8a8f3461ae" prefix=" " category="inline-code"></block> 不会单独挂载</block>
@@ -11545,4 +11544,5 @@
   <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
   <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
   <block id="293b7a0c506af87a1e3b4fb005b0232e" category="paragraph">在查看所有集群时，此面板会显示合规和不合规的集群数量，合规和不合规的 Storage VM 数量以及加密和未加密的卷数量。合规性基于<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面中查看所有集群的安全详细信息。</block>
+  <block id="1daba90506b1f94ee6106dc86aa53476" category="paragraph">如果Cloud Volumes ONTAP HA 集群之间的还原操作因 NDMP 错误而失败，则可能需要在目标集群中添加明确的 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用NetApp控制台执行此配置步骤。</block>
 </blocks>
